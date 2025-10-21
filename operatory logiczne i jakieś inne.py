@@ -13,7 +13,7 @@ murarz = False
 #^to jest albo
 print(fryzjer == True ^ murarz == True)
 print(fryzjer == True ^ murarz == False)
-'''
+
 #priorytety operatoru]ów logicznych
 print(2 == 3 and 3 > 1 or 2>6)
 #and jest robiony w pierwszej kolejności
@@ -31,3 +31,4 @@ print(12 // 5)
 
 # Reszta z dzielenia liczby a przez liczbę b
 print(12 % 5)
+'''
