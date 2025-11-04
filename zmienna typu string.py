@@ -53,10 +53,10 @@ trzecia_liczba = int(piec_liczb_po_podziale[2])
 print(trzecia_liczba)'''
 
 # łączenie napisów
-lista_napisów = ['windows', 'jest', 'tworzony', 'dla', 'kasy']
-cale_zdanie = '$'.join(lista_napisów)
-print(lista_napisów)
-print(całe_zdanie)
+lista_napisow = ['windows', 'jest', 'tworzony', 'dla', 'kasy']
+cale_zdanie = '$'.join(lista_napisow)
+print(lista_napisow)
+print(cale_zdanie)
 
 lista_napisow2 =['abc', 'xyz', 'bbc', 'tvn']
 cale_zdanie2 ='\n'.join(lista_napisow2)
@@ -65,3 +65,24 @@ print(cale_zdanie2)
 napis5 = 'prawdopodobieństwo'
 ile_razy_o = napis.count('o')
 print(ile_razy_o)
+
+#5.) "Mutowalnosc stringów"
+napis6 = 'fiwyka'
+'''napis6[2] = '2''''
+#wniosek: stringi nie są mutowalne
+
+#dobry sposób na mutowanie
+napis6_lista = list(napis6)
+napis6_lista[2] = 'z'
+napis6_gotowy = ''.join(napis6_lista)
+print(napis6_gotowy)
+
+#Długość napisu
+napis7 = 'językpolski'
+# .isalpha() == True  .isdigit() == True   .isalnum == True
+#       litery       /       cyfry       /   cyfry lub litery
+
+print(len(napis7))
+
+#7 powilanie stringów
+napis8 = 'informatyka'
