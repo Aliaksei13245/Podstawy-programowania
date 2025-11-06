@@ -68,7 +68,7 @@ print(ile_razy_o)
 
 #5.) "Mutowalnosc stringów"
 napis6 = 'fiwyka'
-'''napis6[2] = '2''''
+'''napis6[2] = '2'''
 #wniosek: stringi nie są mutowalne
 
 #dobry sposób na mutowanie
@@ -86,3 +86,41 @@ print(len(napis7))
 
 #7 powilanie stringów
 napis8 = 'informatyka'
+
+#9 kody ASCII
+#9.1 ze znaku na kod ASCII
+print(ord('A'))
+
+#9.2 z kodu ASCII na znak
+print(chr(66))
+
+#10 funkcja translate
+slownik = str.maketrans('ąęćżłśńóź!', 'aeczlsnoz?')
+napis12 = 'ińfórmątyką!'
+napis12poprawny = napis12.translate(slownik)
+print(napis12poprawny)
+
+#11 funkcje dużych i małych liter
+napis13 = 'KoNgO'
+napis13_dyze = napis13.upper()
+print(napis13_dyze)
+
+napis14 = 'KoNgO'
+napis14_male = napis13.lower()
+print(napis14_male)
+
+#12 podstawianie ciągów znaków
+napis15 = 'Chleb kosztuje 15 zł, a bułken 5 zł'
+napis15_w_euro = napis15.replace('zł', '$')
+print(napis15_w_euro)
+
+#13 sortowanie i odwracanie napisu
+# odwracanie
+napis14 = 'kemot'
+napis14_od = napis14[::-1]
+
+#sortowanie
+napis16 = 'dbca'
+napis16_posortowany = sorted('napis16')
+napis16_posortowany_wynik = ''.join(napis16_posortowany)
+print(napis16_posortowany_wynik)
