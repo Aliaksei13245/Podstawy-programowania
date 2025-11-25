@@ -71,3 +71,4 @@ liczba = 10
 while liczba > 0:
     print(liczba)
     liczba = liczba - 1
+
