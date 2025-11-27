@@ -40,13 +40,23 @@ for k in range(len(lista10)):#len to długość listy
     print(lista10[k])'''
 
 #17
-suma = 0
+'''suma = 0
 n = int(input('podajile będzie liczb'))
 for i in range(n):
     liczba = int(input('podaj liczbę'))
 
     for a in range(liczba + 1):
         suma = suma + a
-print(suma)
+print(suma)'''
 
+'''lista = [7]
+for i in lista:
+    liczba = float(input('podaj liczbe rzeczewista'))
+    print(liczba)
+    if liczba != 0:
+        lista.append(3)'''
 
+a = 1
+while a > 1:
+    print(a)
+    a.append(1)
