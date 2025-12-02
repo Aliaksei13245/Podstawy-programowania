@@ -39,15 +39,25 @@ for k in range(0, 4): # range(0) k jest indeksem
 for k in range(len(lista10)):#len to długość listy
     print(lista10[k])'''
 
+from math import inf
+# inf to bardzo wielka liczba
 #17
-'''suma = 0
+suma = 0
 n = int(input('podajile będzie liczb'))
-for i in range(n):
-    liczba = int(input('podaj liczbę'))
+max_liczba = -inf #minus nieskńczoność
+min_liczba = inf # plud nieskończoność
 
-    for a in range(liczba + 1):
-        suma = suma + a
-print(suma)'''
+for x in range(n):
+    liczba = int(input('podaj liczbę'))
+    suma = suma + liczba
+    if liczba > max_liczba:
+        max_liczba = liczba
+    if liczba < min_liczba:
+        min_liczba = liczba
+print(suma)
+print(suma / n)
+print(max_liczba)
+print(min_liczba)
 
 '''lista = [7]
 for i in lista:
@@ -56,7 +66,32 @@ for i in lista:
     if liczba != 0:
         lista.append(3)'''
 
-a = 1
+'''a = 1
 while a > 1:
     print(a)
-    a.append(1)
+    a.append(1)'''
+
+'''lista = [3, 4, 4, 3, 7, 8, 9,]
+for i in range(len(lista)):
+    print(lista[i])'''
+'''x = 1
+a = 1
+while a > 0:
+    print(x)
+    x += 1
+    a += 1'''
+
+'''a = [1]
+a.append()
+print(a)'''
+
+'''lista = [1]
+for i in lista:
+    print('hello')
+    lista.append(1)
+'''
+
+'''lista = [1, 3]
+lista += [1]
+print(lista)'''
+print(sum(x))
