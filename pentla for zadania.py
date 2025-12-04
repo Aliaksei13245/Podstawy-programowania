@@ -39,7 +39,7 @@ for k in range(0, 4): # range(0) k jest indeksem
 for k in range(len(lista10)):#len to długość listy
     print(lista10[k])'''
 
-from math import inf
+'''from math import inf
 # inf to bardzo wielka liczba
 #17
 suma = 0
@@ -57,7 +57,7 @@ for x in range(n):
 print(suma)
 print(suma / n)
 print(max_liczba)
-print(min_liczba)
+print(min_liczba)'''
 
 '''lista = [7]
 for i in lista:
@@ -94,4 +94,27 @@ for i in lista:
 '''lista = [1, 3]
 lista += [1]
 print(lista)'''
-print(sum(x))
+'''print(sum(x))'''
+#-------tabliczka-mnożenia--------
+'''for i in range(1, 101):
+    for j in range(1, 101):
+        print(i * j, end = '\t\t')
+    print()'''
+#---------------------------------
+
+'''n = int(input('wysikość'))
+for x in range(n):
+    for y in range(x + 1):
+        print('*', end = ' ')
+    print()'''
+
+#Trójkąt równoramienny dowolny
+n = int(input('podaj wysokoćć'))
+spacja = n - 1
+gwiazdki = 1
+
+for i in range(n):
+    print(' ' * spacja, end = '')
+    print('*' * gwiazdki)
+    spacja = spacja - 1
+    gwiazdki = gwiazdki + 2
