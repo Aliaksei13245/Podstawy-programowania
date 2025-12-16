@@ -30,11 +30,65 @@ for i in range(len(lista)):
             wynik += 1
 print(wynik)'''
 
-n = int(input('podaj pow'))
+'''n = int(input('podaj pow'))
 max_napis = ''
 for x in range(n):
     napis = input('podaj napis')
     ile_a = napis.count('a')
     max_ile_a = max_napis.count('a')
     if ile_a > max_ile_a:
-        max_napis = napis
+        max_napis = napis'''
+
+
+
+'''from time import sleep
+from random import randint
+wynik1 = 0
+wynik2 = 0
+akcja = 0
+
+while not ((wynik1 >= 1000 or wynik2 >= 1000) and abs(wynik1 - wynik2) >= 100):
+    akcja += 1
+    print(f'Akcja {akcja}')
+    #druzyna = int(input('podaj nr drużyny która wygrała'))
+    druzyna = randint(1, 2)
+    if druzyna == 1:
+        wynik1 += 1
+    else:
+        wynik2 += 1
+    print(f'Wynik {wynik1} : {wynik2}')
+    sleep(0)
+
+if wynik1 > wynik2:
+    print('Drużyna 1')
+else:
+    print('Drużyna 2')'''
+
+
+
+'''liczba = int(input('podaj liczbę'))
+    while liczba > 0:
+        cyfra = liczba % 10
+        liczba = liczba // 10
+        print(cyfra, end = '')'''
+
+
+
+liczba = int(input('podaj liczbę'))
+d = 2
+ileczyn = 0
+ilerczyn = 0
+while liczba > 1:
+    '''while liczba % d == 0:
+        liczba = liczba // d
+        ileczyn += 1'''
+    if liczba % d == 0:
+        ilerczyn += 1
+    while liczba % d == 0:
+        liczba = liczba // ileczyn
+        ileczyn += 1
+    d += 1
+print(ileczyn)
+
+
+
