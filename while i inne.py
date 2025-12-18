@@ -74,21 +74,51 @@ else:
 
 
 
-liczba = int(input('podaj liczbę'))
+'''liczba = int(input('podaj liczbę'))
 d = 2
 ileczyn = 0
 ilerczyn = 0
 while liczba > 1:
-    '''while liczba % d == 0:
+    while liczba % d == 0:
         liczba = liczba // d
-        ileczyn += 1'''
+        ileczyn += 1
     if liczba % d == 0:
         ilerczyn += 1
     while liczba % d == 0:
         liczba = liczba // ileczyn
         ileczyn += 1
     d += 1
-print(ileczyn)
+print(ileczyn)'''
 
-
-
+from time import sleep
+from random import randint
+x, y = 0, 0
+ruchy = ['a','d','s','w',] * 10 + ['q']
+while True:
+    #ruch = str(input('podaj kierunrk'))
+    ruch = ruchy[randint(0, len(ruchy) - 1)]
+    if ruch == 'q':
+        break
+    elif ruch == 'w':
+        if y < 9:
+            y += 1
+        else:
+            print('ruch niemożliwy')
+    elif ruch == 's':
+        if y > 0:
+            y -= 1
+        else:
+            print('ruch niemożliwy')
+    elif ruch == 'd':
+        if x < 9:
+            x += 1
+        else:
+            print('ruch niemożliwy')
+    elif ruch == 'a':
+        if x > 0:
+            x -= 1
+        else:
+            print('ruch niemożliwy')
+    print(f'{x}:{y}')
+    print(ruch)
+    sleep(1)
