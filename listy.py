@@ -1,4 +1,4 @@
-#listy a napisy
+'''#listy a napisy
 napis = 'informatyka'
 lista = list(napis)
 print(lista)
@@ -52,4 +52,55 @@ while 4 in lista12:
     lista12.remove(4)
 
 #na bazie indeksu
-del lista11[2] # el. o indeksie 2
+del lista11[2] # el. o indeksie 2'''
+
+
+
+lista1 = [12, -9, 6, 2, 8, 1, 15, -7, 0, 1, 1, 2, 2, -7, 2, 1, -7, 2]
+lista2 = [['pies', 'wilk'], ['kot domowy', 'tygrys', 'lew'], 'kapibara', 'mrówka', ['rekin', 'śledź', 'pstrąg']]
+
+#a
+print(lista2[1][2])
+
+#b
+mrowka = list(lista2[3])
+
+#odwrotnie
+slowo = ''.join(mrowka)
+print(slowo)
+
+#c
+lista3 = lista1[2::2]
+print(lista3)
+
+#d
+'''lista_a = [1,2,3]
+lista_b = [4,5,6]
+lista_a.append(lista_b)
+print(lista_a)'''
+lista2.append(lista2[1] * 3)
+print(lista2)
+
+#e
+lista1 = lista1 + [9, 6, 16, -8, 7]
+print(lista1)
+
+#f
+#lista1.sort()
+lista1_p = sorted(lista1)
+print(lista1_p)
+print(lista1_p[0], lista1_p[-1])
+print(min(lista1),max(lista1))
+
+#g
+'''del lista1[4]
+print(lista1)'''
+
+#h
+del lista1[4:9]
+
+#g
+'''while 2 in lista1:
+    lista1.remove(2)'''
+
+lista1 = [x for x in lista1 if if x != 2]
