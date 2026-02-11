@@ -122,3 +122,34 @@ print(lista_norm)'''
 lista = [123, 89, 5600, 432, 11, 45, 900, 12450, 1410, 390, 9999]
 #lista = [x for x in lista if x < 1000 or x > 9999]
 lista = [x for x in lista if not (x >= 1000 and x <= 9999)]
+
+oceny = {'matematyka': 3,'fizyka': 2,'polski': 4}
+#dostawanie się do wartości pod danym kluczem
+print('fizyka')#pobieramy wartość ze słownika
+
+oceny['polski'] = 5
+
+#dodawanie klucza do słownika
+oceny['geografia'] = 6
+print(oceny)
+zbior = {}
+#sklejanie słownika z listy kluczy i wartości
+klucze = ['Bitwa pod Grunwaldem', 'chrzest Polski', 'III rozbiór Polski']
+wartosci = [1410, 966, 1795]
+for i in range(len(klucze)):
+    zbior[klucze[i]] = wartosci[i]
+print(zbior)
+slownik = dict(zip(klucze, wartosci))
+print(slownik)
+
+slownik2 = dict(janisz = 21, alojzy = 99, Bracislawa = 67)
+print(slownik2)
+
+del oceny['fizyka']
+print(oceny)
+
+for k in oceny:
+    print(k, oceny[k])
+
+for i in oceny.items():
+    print(i)
